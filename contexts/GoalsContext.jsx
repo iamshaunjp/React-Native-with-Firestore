@@ -1,6 +1,5 @@
 import { createContext, useState } from "react"
 
-
 export const GoalsContext = createContext()
 
 export function GoalsProvider({ children }) {
