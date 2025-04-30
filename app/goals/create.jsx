@@ -6,7 +6,7 @@ const Create = () => {
   const [goal, setGoal] = useState('')
   
   const handleSubmit = async () => {
-
+    
   }
 
   return (
