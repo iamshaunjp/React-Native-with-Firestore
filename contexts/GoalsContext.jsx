@@ -1,4 +1,4 @@
-import { addDoc, collection, doc, getDocs, onSnapshot, updateDoc } from "firebase/firestore"
+import { addDoc, collection, deleteDoc, doc, getDocs, onSnapshot, updateDoc } from "firebase/firestore"
 import { createContext, useEffect, useState } from "react"
 import { db } from "../firebaseConfig"
 
@@ -21,8 +21,8 @@ export function GoalsProvider({ children }) {
     await addDoc(collection(db, 'goals'), goalData)
   }
 
-  async function deleteGoal() {
-    
+  async function deleteGoal(id) {
+    await deleteDoc(doc(db, 'goals', id))
   }
 
   async function updateGoal(id, updates) {
