@@ -8,10 +8,6 @@ export function GoalsProvider({ children }) {
   async function fetchGoals() {
 
   }
-
-  async function fetchGoalById() {
-
-  }
   
   async function createGoal() {
 
