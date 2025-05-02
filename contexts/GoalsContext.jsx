@@ -31,7 +31,7 @@ export function GoalsProvider({ children }) {
 
   return (
     <GoalsContext.Provider 
-      value={{ goals, fetchGoals, fetchGoalById, createGoal, deleteGoal, updateGoal }}
+      value={{ goals, fetchGoals, createGoal, deleteGoal, updateGoal }}
     >
       {children}
     </GoalsContext.Provider>
