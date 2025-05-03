@@ -12,7 +12,6 @@ const Goals = () => {
       <FlatList
         data={goals}
         keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.list}
         renderItem={({ item }) => (
           <Pressable>
             <View style={styles.goal}>
